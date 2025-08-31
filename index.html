@@ -12,7 +12,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: url('background.jpg') no-repeat center center/cover; /* <-- Your background image */
+      background: url('background.jpg') no-repeat center center/cover;
     }
 
     .container {
@@ -29,6 +29,8 @@
     .logo {
       width: 110px;
       margin: 0 auto 15px;
+      background: transparent; /* transparent background */
+      display: block;
     }
 
     .headline {
@@ -105,9 +107,9 @@
 
     .qr-box img {
       width: 180px;
-      border: 3px solid #eee;
+      border: none; /* removed border */
       border-radius: 12px;
-      background: #fff;
+      background: transparent; /* transparent background */
     }
 
     .secure {
@@ -127,7 +129,7 @@
 <body>
   <div class="container">
     <!-- LOGO -->
-    <img src="logo.png" alt="Logo" class="logo"> <!-- <-- Your logo here -->
+    <img src="logo.png" alt="Logo" class="logo">
 
     <div class="headline">Get a Chance to Win ₹1,00,000!</div>
     <div class="sub">MrBeast Game Registration Form</div>
@@ -162,7 +164,7 @@
 
     <div class="qr-box">
       <p>Or scan to pay:</p>
-      <img src="qr.png" alt="UPI QR"> <!-- <-- Your QR code here -->
+      <img src="qr.png" alt="UPI QR">
     </div>
 
     <div class="secure">🔒 Secure UPI Payment</div>
